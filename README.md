@@ -2,78 +2,45 @@
 
 ALX Software Engineering GROUP PROJECT
 
-TASKS
+ *Customized attempt of  _printf function**
 
-#0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life
-   
-	Write a function that produces output according to a format.
-
-#1. Education is when you read the fine print. Experience is what you get if you don't
-   
-	Handle the following conversion specifiers:
-
-#2. With a face like mine, I do better in print
-
-	Handle the following custom conversion specifiers:
-
-#3. What one has not experienced, one will never understand in print
-  
-	Handle the following conversion specifiers:
-
-#4. Nothing in fine print is ever good news
-
-	Use a local buffer of 1024 chars in order to call write as little as possible.
-
-#5. My weakness is wearing too much leopard print
-
-	Handle the following custom conversion specifier:
-
-#6. How is the world ruled and led to war? Diplomats lie to journalists and believe these lies when they see them in print
-
-	Handle the following conversion specifier: p.
-
-#7. The big print gives and the small print takes away
-
-	Handle the following flag characters for non-custom conversion specifiers:
-
-#8. Sarcasm is lost in print
-   
-	Handle the following length modifiers for non-custom conversion specifiers:
-
-#9. Print some money and give it to us for the rain forests
-
-	Handle the field width for non-custom conversion specifiers.
-
-#10. The negative is the equivalent of the composer's score, and the print the performance
-    
-	Handle the precision for non-custom conversion specifiers.
-
-#11. It's depressing when you're still around and your albums are out of print
-    
-	Handle the 0 flag character for non-custom conversion specifiers.
-
-#12. Every time that I wanted to give up, if I saw an interesting textile, print what ever, suddenly I would see a collection
- 
-	Handle the - flag character for non-custom conversion specifiers.
-
-#13. Print is the sharpest and the strongest weapon of our party
-
-	Handle the following custom conversion specifier:
-
-#14. The flood of print has turned reading into a process of gulping rather than savoring
-    
-	Handle the following custom conversion specifier:
-
-#15. *
-  
-	All the above options work well together.
+A _printf function built and implemented from scratch.
 
 
+The _printf function is a custom implementation of the standard C library 
+function printf. It allows you to format and output text to the console or 
+other output streams.
+
+This program implements a custom printf function that supports the following conversion specifiers:
+
+    **%c** : prints a single character
+    **%s** : prints a null-terminated string
+    **%d**, %i, %u, %o, %x, %X : prints a signed/unsigned integer in decimal, octal, or hexadecimal format
+    **%p** : prints a pointer address
+    **%S** : prints a string with non-printable characters represented in the format \xXX (where XX is the ASCII code value in hexadecimal, always two characters in uppercase)
+
+The program also supports the following flag characters:
+
+    **0** : left-pads the output with zeros instead of spaces
+    **#** : left-justifies the output within the given field width
+    **+** : always prints the sign of a signed number (+ or -)
+    **space** : prints a space before a positive number (overrides the + flag)
+
+The program also supports the following length modifiers:
+
+    **h** : short (for integers)
+    **l** : long (for integers)
+
+In addition, the program supports the following custom conversion specifiers:
+
+    **%r** : prints the reversed string
+    **%R** : prints the rot13'ed string
+
+The maximum field width that can be specified is 1024 characters. This buffer size is used to minimize the number of calls to the write function.
 
 
+END.
+AUTHORS:
 
-END:
-   AUTHORED BY:
-              
-             1. EZRA KIPNGETICH : @Pythonic671
-             2. LEWIS MACHOKA : @Machoka-Hub 
+	1. Ezra Kipngetich
+	2. Lewis Machoka [https://github.com/Machoka-Hub]
